@@ -2,9 +2,9 @@ library(nflreadr)
 library(tidyverse)
 
 
-play_by_play_data <- nflreadr::load_pbp(2000:2022)
+play_by_play_data <- nflreadr::load_pbp(2001:2022)
 
-game_result_data <- nflreadr::load_schedules(2000:2022)
+game_result_data <- nflreadr::load_schedules(2001:2022)
 
 
 # filter data by home and away teams, mutate column for when team wins, lose, or push against the spread
@@ -100,3 +100,11 @@ game_weather_data <- home_weather_data |>
 
 # inner join ats data, and game stats
 
+nfl_game_data <- team_ats |> 
+  inner_join(team_game_stats)
+
+# to csv
+
+write.csv(nfl_game_data, "nfl_game_data.csv", row.names = FALSE)
+
+write.csv(game_weather_data, "game_weather_data.csv", row.names = FALSE)
