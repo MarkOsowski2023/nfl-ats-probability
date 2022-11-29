@@ -105,6 +105,6 @@ nfl_game_data <- team_ats |>
 
 # to csv
 
-write.csv(nfl_game_data, "nfl_game_data.csv", row.names = FALSE)
+write.csv(nfl_game_data, "C:/Users/marko/NW_Challenges/nfl-ats-probability/nfl-ats-probability/Data/nfl_game_data.csv", row.names = FALSE)
 
-write.csv(game_weather_data, "game_weather_data.csv", row.names = FALSE)
+write.csv(game_weather_data, "C:/Users/marko/NW_Challenges/nfl-ats-probability/nfl-ats-probability/Data/game_weather_data.csv", row.names = FALSE)
