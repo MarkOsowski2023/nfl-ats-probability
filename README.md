@@ -15,12 +15,12 @@ In simple terms, the **point spread** is the amount of points that a team is exp
 ## Data Cleaning
 
 ## Classification Models
-# Linear Regression
-# Stochastic Gradient Descent (SGD)
-# K-Nearest Neighbors
-# Random Forest
+### Linear Regression
+### Stochastic Gradient Descent (SGD)
+### K-Nearest Neighbors
+### Random Forest
 
 ## Visualizations
-# [Tableau](https://public.tableau.com/app/profile/henry7314/viz/NFLATSData/Story1#1)
+### [Tableau](https://public.tableau.com/app/profile/henry7314/viz/NFLATSData/Story1#1)
 
 ## Conclusions
