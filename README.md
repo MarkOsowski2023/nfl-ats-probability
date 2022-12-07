@@ -28,6 +28,14 @@ Four different classification models were used since the our target has three di
 ### RStudio
 ![NFL teams win percentage against the spread.](/Images/team_win_percentage_ats.png)
 
+![NFL teams win percentage against the spread.](/Images/tom_brady_off_epa.png)
+
+![NFL teams win percentage against the spread.](/Images/win_percentage_ats_and_def_epa.png)
+
+![NFL teams win percentage against the spread.](/Images/win_percentage_ats_and_epa.png)
+
+![NFL teams win percentage against the spread.](/Images/wins_against_the_spread.png)
+
 ### Matplotlib
 
 ### Yellowbrick
