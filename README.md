@@ -15,7 +15,7 @@ In simple terms, the **point spread** is the amount of points that a team is exp
 ## Data Cleaning
 
 ## Classification Models
-Four different classification models were used since the our target has three different categories -- win, lose or push.
+Four different classification models were used since our target has three different categories -- win, lose or push.
 
 ### Linear Regression
 ### Stochastic Gradient Descent (SGD)
@@ -26,18 +26,22 @@ Four different classification models were used since the our target has three di
 ### [Tableau](https://public.tableau.com/app/profile/henry7314/viz/NFLATSData/Story1#1)
 
 ### RStudio
-![NFL teams win percentage against the spread.](/Images/team_win_percentage_ats.png)
+![NFL teams cover percentage against the spread.](/Images/team_win_percentage_ats.png)
 
-![NFL teams win percentage against the spread.](/Images/tom_brady_off_epa.png)
+![Tom Brady win percentage against the spread vs. offensive expected points added.](/Images/tom_brady_off_epa.png)
 
-![NFL teams win percentage against the spread.](/Images/win_percentage_ats_and_def_epa.png)
+![Win percentage against the spread vs. defensive expected points added.](/Images/win_percentage_ats_and_def_epa.png)
 
-![NFL teams win percentage against the spread.](/Images/win_percentage_ats_and_epa.png)
+![Win percentage against the spread vs. offensive expected points added.](/Images/win_percentage_ats_and_epa.png)
 
-![NFL teams win percentage against the spread.](/Images/wins_against_the_spread.png)
+![NFL teams win against the spread.](/Images/wins_against_the_spread.png)
 
 ### Matplotlib
 
+![The train and test scores of the number of neighbors plotted to determine the best k-nearest neighbor](/Images/kneighbors.png)
+
 ### Yellowbrick
+
+![The Receiver Operating Characteristic/Area Under the Curve plot for the k-nearest neighbor classifier. Displays ROC of the lose, push, and win classes as well as the micro-average ROC curve, AUC and macro-average ROC curve, AUC](/Images/kneighbors_rocauc.png)
 
 ## Conclusions
