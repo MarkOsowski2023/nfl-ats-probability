@@ -26,6 +26,7 @@ Four different classification models were used since the our target has three di
 ### [Tableau](https://public.tableau.com/app/profile/henry7314/viz/NFLATSData/Story1#1)
 
 ### RStudio
+![NFL teams win percentage against the spread.](/Images/team_win_percentage_ats.png)
 
 ### Matplotlib
 
