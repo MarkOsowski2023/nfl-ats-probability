@@ -13,6 +13,9 @@ nflreadr is a download package containing data from multiple repositories within
 In simple terms, the **point spread** is the amount of points that a team is expected to win or lose by for the purposes of placing bets. When comparing the results of the game **against the spread (or ATS)**, there are three outcomes -- win, lose, or push. For example, ...
 
 ## Data Cleaning
+The data was cleaned primarily in RStudio utilizing the tidyverse library. Some additional cleaning steps were taken in Jupyter Notebook Pandas prior to using Scikitlearn to initialize, fit and predict the models.
+
+The data was initially filtered by years (2001-present) -- starting in 2001 due to missing data/changed regulations in years prior.
 
 ## Classification Models
 Four different supervised learning classification models were used since our target has three known categories -- win, lose or push. The models used are ***Logistic Regression, Stochastic Gradient Descent (SGD), K-Nearest Neighbors and Random Forest***.
