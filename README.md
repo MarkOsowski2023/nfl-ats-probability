@@ -64,6 +64,13 @@ The results of the model for each class was then plotted on a Receiver Operating
 - Test Score: 0.8015
 - Cohen's Kappa: 0.6131
 
+## Conclusions
+1. All the models used provided similar results, which indicates that the correct statistics were used to predict the spread outcomes.
+2. Vegas has a significant advantage when it comes to betting on teams.
+   - In order to be profitable (assuming a -110 vig & the same unit is bet on each game), one has to win 52.4% of bets placed
+   - The vast majority of teams cover between 40%-60% of the time, giving no real advantage
+3. The expected accuracy of the model was 48.7% and the observed accuracy of the model is ***79%***
+
 ## Visualizations
 ### [Tableau](https://public.tableau.com/app/profile/henry7314/viz/NFLATSData/Story1#1)
 
@@ -77,6 +84,3 @@ The results of the model for each class was then plotted on a Receiver Operating
 ![Win percentage against the spread vs. offensive expected points added.](/Images/win_percentage_ats_and_epa.png)
 
 ![NFL teams win against the spread.](/Images/wins_against_the_spread.png)
-
-## Conclusions
-
