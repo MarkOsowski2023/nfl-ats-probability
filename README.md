@@ -29,6 +29,8 @@ Next, a pipeline was created to use for each model. The pipeline was first divid
 
 
 ### Stochastic Gradient Descent (SGD)
+Stochastic is defined as randomly determined or having a random probability distribution. As a gradient descent model is running, it tweaks the parameters of the model iteratively. So a SGD model is taking a random samples for each iteration instead of using the whole dataset. It finds the optimal solution while minimizing the cost function.
+
 **Results**
 - Train Score: 0.8076
 - Test Score: 0.7847
