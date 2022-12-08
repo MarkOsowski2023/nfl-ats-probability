@@ -15,12 +15,36 @@ In simple terms, the **point spread** is the amount of points that a team is exp
 ## Data Cleaning
 
 ## Classification Models
-Four different classification models were used since our target has three different categories -- win, lose or push.
+Four different supervised learning classification models were used since our target has three known categories -- win, lose or push. The models used are ***Logistic Regression, Stochastic Gradient Descent (SGD), K-Nearest Neighbors and Random Forest***.
 
-### Linear Regression
+To test each model, a function was created to train the X and y data and then fit and predict it. The function also printed out the train and test scores, Cohen's Kappa as well as the confusion matrix and classification reports.
+
+Next, a pipeline was created to use for each model. The pipeline was first divided into numeric and categorical features and the columns were transformed.
+
+### Logistic Regression
+**Results**
+- Train Score: 0.8139
+- Test Score: 0.7989
+- Cohen's Kappa: 0.6082
+
+
 ### Stochastic Gradient Descent (SGD)
+**Results**
+- Train Score: 0.8076
+- Test Score: 0.7847
+- Cohen's Kappa: 0.5803
+
 ### K-Nearest Neighbors
+**Results**
+- Train Score: 0.8084
+- Test Score: 0.7979
+- Cohen's Kappa: 0.6062
+
 ### Random Forest
+**Results**
+- Train Score: 1.0
+- Test Score: 0.8015
+- Cohen's Kappa: 0.6131
 
 ## Visualizations
 ### [Tableau](https://public.tableau.com/app/profile/henry7314/viz/NFLATSData/Story1#1)
@@ -45,3 +69,6 @@ Four different classification models were used since our target has three differ
 ![The Receiver Operating Characteristic/Area Under the Curve plot for the k-nearest neighbor classifier. Displays ROC of the lose, push, and win classes as well as the micro-average ROC curve, AUC and macro-average ROC curve, AUC](/Images/kneighbors_rocauc.png)
 
 ## Conclusions
+
+## Additional Observations
+
