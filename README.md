@@ -35,10 +35,28 @@ Next, a pipeline was created to use for each model. The pipeline was first divid
 - Cohen's Kappa: 0.5803
 
 ### K-Nearest Neighbors
-**Results**
+Initially, this model was run with the default number of neighbors (5).
+
+**Initial Results**
+- Train Score: 0.8395
+- Test Score: 0.7647
+- Cohen's Kappa: 0.5428
+
+After getting the results, the model was then optimized by looping through the odd numbers between 1 and 40 to test each number as the number of neighbors for the model. The results were also plotted using Matplotlib.
+
+![The train and test scores of the number of neighbors plotted to determine the best k-nearest neighbor](/Images/kneighbors.png)
+
+The number of neighbors (or the variable k) that had the highest test score was 27, so this is the number of neighbors defined in the second iteration of the model. The optimized results returned a lower train score, but higher test scores and Cohen's Kappa, which means the model ***did*** improve.
+
+
+**Optimized Results**
 - Train Score: 0.8084
 - Test Score: 0.7979
 - Cohen's Kappa: 0.6062
+
+The results of the model for each class was then plotted on a Receiver Operating Characteristic/Area Under the Curve (ROC/AUC) graph. The strongest performing classes were lose and win. The more the lines pull towards the top left of the graph means there are more true positives, so model is performing more accurately.
+
+![The Receiver Operating Characteristic/Area Under the Curve plot for the k-nearest neighbor classifier. Displays ROC of the lose, push, and win classes as well as the micro-average ROC curve, AUC and macro-average ROC curve, AUC](/Images/kneighbors_rocauc.png)
 
 ### Random Forest
 **Results**
@@ -49,7 +67,7 @@ Next, a pipeline was created to use for each model. The pipeline was first divid
 ## Visualizations
 ### [Tableau](https://public.tableau.com/app/profile/henry7314/viz/NFLATSData/Story1#1)
 
-### RStudio
+### RStudio Interesting Observations
 ![NFL teams cover percentage against the spread.](/Images/team_win_percentage_ats.png)
 
 ![Tom Brady win percentage against the spread vs. offensive expected points added.](/Images/tom_brady_off_epa.png)
@@ -60,15 +78,5 @@ Next, a pipeline was created to use for each model. The pipeline was first divid
 
 ![NFL teams win against the spread.](/Images/wins_against_the_spread.png)
 
-### Matplotlib
-
-![The train and test scores of the number of neighbors plotted to determine the best k-nearest neighbor](/Images/kneighbors.png)
-
-### Yellowbrick
-
-![The Receiver Operating Characteristic/Area Under the Curve plot for the k-nearest neighbor classifier. Displays ROC of the lose, push, and win classes as well as the micro-average ROC curve, AUC and macro-average ROC curve, AUC](/Images/kneighbors_rocauc.png)
-
 ## Conclusions
-
-## Additional Observations
 
