@@ -46,7 +46,7 @@ After getting the results, the model was then optimized by looping through the o
 
 ![The train and test scores of the number of neighbors plotted to determine the best k-nearest neighbor](/Images/kneighbors.png)
 
-The number of neighbors (or the variable k) that had the highest test score was 27, so this is the number of neighbors defined in the second iteration of the model. The optimized results returned a lower train score, but higher test scores and Cohen's Kappa, which means the model ***did*** improve.
+The number of neighbors (or the variable k) that had the highest test score was 27, so this is the number of neighbors defined in the second iteration of the model. The optimized results returned a lower train score, but a higher test score and Cohen's Kappa, which means the model ***did*** improve.
 
 
 **Optimized Results**
