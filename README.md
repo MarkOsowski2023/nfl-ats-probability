@@ -10,12 +10,18 @@ nflreadr is a download package containing data from multiple repositories within
 2. Schedules
 
 ## What is a Point Spread?
-In simple terms, the **point spread** is the amount of points that a team is expected to win or lose by for the purposes of placing bets. When comparing the results of the game **against the spread (or ATS)**, there are three outcomes -- win, lose, or push. For example, ...
+In simple terms, the **point spread** is the amount of points that a team is expected to win or lose by for the purposes of placing bets. When comparing the results of the game **against the spread (or ATS)**, there are three outcomes -- win, lose, or push. For example, there are two teams playing against each other -- the Green Bay Packers (GB) and the Chicago Bears (CHI). GB was expected to win against CHI by at least 7 points or (CHI +7). If the GB beat CHI 29 to 18, that is a difference of 9 points so in that case GB would have a **win** against the spread and CHI would get a **loss**.
+
+If GB were to beat CHI by exactly 7 points, that would be a **push**.
 
 ## Data Cleaning
 The data was cleaned primarily in RStudio utilizing the tidyverse library. Some additional cleaning steps were taken in Jupyter Notebook Pandas prior to using Scikitlearn to initialize, fit and predict the models.
 
 The data was initially filtered by years (2001-present) -- starting in 2001 due to missing data/changed regulations in years prior.
+
+Next, the data was filtered by first the away teams. Within the filter, a new column was created to identify either win, lose, or push for each individual game. The same transformation was completed for the home teams so all the teams would have one of the three results for each individual game. The results from both were merged into one dataframe team_ats.
+
+Stats relevant to making predictions were selected and then merged with the previously created dataframe (team_ats) and the dataframe was then converted to a CSV file to read into Jupyter Notebook.
 
 ## Classification Models
 Four different supervised learning classification models were used since our target has three known categories -- win, lose or push. The models used are ***Logistic Regression, Stochastic Gradient Descent (SGD), K-Nearest Neighbors and Random Forest***.
